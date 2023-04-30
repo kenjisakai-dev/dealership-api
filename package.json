@@ -1,0 +1,17 @@
+{
+  "name": "dealership-api",
+  "version": "1.0.0",
+  "description": "crud dealership-api",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "author": "Kenji Sakai",
+  "license": "ISC",
+  "type": "module",
+  "dependencies": {
+    "express": "^4.18.2",
+    "nodemon": "^2.0.22",
+    "winston": "^3.8.2"
+  }
+}
