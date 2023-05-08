@@ -15,11 +15,20 @@ http://localhost:3004/marcas/menosModelos
 ```
 
 - Retornar as marcas que possuí mais ou menos modelos<br>
-- GET http://localhost:3004/marcas/listaMaisModelos/{qnt}<br>
-- GET http://localhost:3004/marcas/listaMenosModelos/{qnt}<br>
+```bash
+# GET
+http://localhost:3004/marcas/listaMaisModelos/{qnt}
+```
+```bash
+# GET
+http://localhost:3004/marcas/listaMenosModelos/{qnt}
+```
 
-- Retornar uma lista com todos os modelos de uma marca<br>
-- POST http://localhost:3004/marcas/listaModelos<br>
+Retornar uma lista com todos os modelos de uma marca<br>
+```bash
+# POST
+http://localhost:3004/marcas/listaModelos<br>
+```
 
 ### Documentação swagger da API
 ```bash
