@@ -15,13 +15,13 @@
 - Retornar uma lista com todos os modelos de uma marca<br>
 - POST http://localhost:3004/marcas/listaModelos<br>
 
-### Como usar a API
-
-FrameWorks Usados
+### FrameWorks Usados
 - express
 - nodemon
 - winston
 - swagger-ui-express
+
+### Como usar a API
 
 Instale as Dependências
 ```bash
