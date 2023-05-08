@@ -15,12 +15,6 @@
 - Retornar uma lista com todos os modelos de uma marca<br>
 - POST http://localhost:3004/marcas/listaModelos<br>
 
-### FrameWorks Usados
-- express
-- nodemon
-- winston
-- swagger-ui-express
-
 ### Como usar a API
 
 Instale as Dependências
@@ -33,7 +27,13 @@ Iniciar a API
 nodemon index.js
 ```
 
-### Modelo do Banco
+### FrameWorks Usados
+- express
+- nodemon
+- winston
+- swagger-ui-express
+
+### Funcionamento do Bando de Dados
 Usamos o arquivo car-list.json como banco
 O Arquivo possuí
 - Um array de objetos com as seguintes propriedades brand (marca) e models (modelos)
