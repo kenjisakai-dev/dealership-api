@@ -26,7 +26,7 @@ http://localhost:3004/marcas/listaMenosModelos/{qnt}
 
 Retornar uma lista com todos os modelos de uma marca<br>
 ```bash
-# POST - formato json { "marca": "Fiat" }
+# POST - passar o parâmetro no formato json { "marca": "Fiat" }
 http://localhost:3004/marcas/listaModelos<br>
 ```
 
