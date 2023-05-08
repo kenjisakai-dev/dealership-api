@@ -15,6 +15,11 @@
 - Retornar uma lista com todos os modelos de uma marca<br>
 - POST http://localhost:3004/marcas/listaModelos<br>
 
+### Documentação swagger
+```bash
+http://localhost:3004/docs
+```
+
 ### Como usar a API
 
 Instale as Dependências
