@@ -35,6 +35,5 @@ nodemon index.js
 
 ### Funcionamento do Bando de Dados
 Usamos o arquivo car-list.json como banco<br>
-O Arquivo possuí
 - Um array de objetos com as seguintes propriedades brand (marca) e models (modelos)
 - a propriedade models possuí um array dos modelos
