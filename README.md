@@ -1,21 +1,40 @@
-# dealership-api
+# Dealership-api
 
-## CRUD dealership-api (concessionária) obtém informações de uma lista em json de marcas e modelos de carros 
+## Dealership API 
 
 ### Funcionalidades:
 
-- Retorna a marca que mais possui modelos<br>
-- Retorna a marca que menos possui modelos<br>
-- Retorna as marcas que mais possui modelos de acordo com a quantidade passada<br> 
-- Retorna as marcas que menos possui modelos de acordo com a quantidade passada<br>
-- Retorna uma lista de modelos de acordo com a marca procurada<br>
+- Retornar a marca que possuí mais ou menos modelos<br>
+- GET http://localhost:3004/marcas/maisModelos<br>
+- GET http://localhost:3004/marcas/menosModelos<br>
 
-Mais informações na pasta docs
+- Retornar as marcas que possuí mais ou menos modelos<br>
+- GET http://localhost:3004/marcas/listaMaisModelos/{qnt}<br>
+- GET http://localhost:3004/marcas/listaMenosModelos/{qnt}<br>
 
-### Ajuda:
+- Retornar uma lista com todos os modelos de uma marca<br>
+- POST http://localhost:3004/marcas/listaModelos<br>
 
-- kenjisakai80@gmail.com
+### Como usar a API
 
-### Autores:
+FrameWorks Usados
+- express
+- nodemon
+- winston
+- swagger-ui-express
 
-- Kenji Sakai
+Instale as Dependências
+```bash
+npm install
+```
+
+Iniciar a API
+```bash
+nodemon index.js
+```
+
+### Modelo do Banco
+Usamos o arquivo car-list.json como banco
+O Arquivo possuí
+- Um array de objetos com as seguintes propriedades brand (marca) e models (modelos)
+- a propriedade models possuí um array dos modelos
