@@ -5,6 +5,7 @@
 ### Funcionalidades:
 
 - Retornar a marca que possuí mais ou menos modelos<br>
+<http://localhost:3004/marcas/maisModelos>
 ```bash
 # GET
 http://localhost:3004/marcas/maisModelos
