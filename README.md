@@ -13,8 +13,8 @@ GET (http://localhost:3004/marcas/listaMaisModelos/{qnt})<br>
 GET (http://localhost:3004/marcas/listaMenosModelos/{qnt})
 
 
-Retornar uma lista com todos os modelos de uma marca
-POST - passar o parâmetro no formato json { "marca": "Fiat" }
+Retornar uma lista com todos os modelos de uma marca<br>
+POST - passar o parâmetro no formato json { "marca": "Fiat" }<br>
 post (http://localhost:3004/marcas/listaModelos)
 
 ---
