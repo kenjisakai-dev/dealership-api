@@ -4,32 +4,18 @@
 
 ### Funcionalidades:
 
-- Retornar a marca que possuí mais ou menos modelos<br>
+Retornar a marca que possuí mais ou menos modelos<br>
 GET (http://localhost:3004/marcas/maisModelos)
-```bash
-# GET
-http://localhost:3004/marcas/maisModelos
-```
-```bash
-# GET
-http://localhost:3004/marcas/menosModelos
-```
+GET (http://localhost:3004/marcas/menosModelos)
 
-- Retornar as marcas que possuí mais ou menos modelos<br>
-```bash
-# GET
-http://localhost:3004/marcas/listaMaisModelos/{qnt}
-```
-```bash
-# GET
-http://localhost:3004/marcas/listaMenosModelos/{qnt}
-```
+Retornar as marcas que possuí mais ou menos modelos<br>
+GET (http://localhost:3004/marcas/listaMaisModelos/{qnt})
+GET (http://localhost:3004/marcas/listaMenosModelos/{qnt})
+
 
 Retornar uma lista com todos os modelos de uma marca
-```bash
-# POST - passar o parâmetro no formato json { "marca": "Fiat" }
-http://localhost:3004/marcas/listaModelos
-```
+POST - passar o parâmetro no formato json { "marca": "Fiat" }
+post (http://localhost:3004/marcas/listaModelos)
 
 ---
 
