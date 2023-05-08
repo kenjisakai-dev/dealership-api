@@ -30,10 +30,14 @@ Retornar uma lista com todos os modelos de uma marca<br>
 http://localhost:3004/marcas/listaModelos<br>
 ```
 
+---
+
 ### Documentação swagger da API
 ```bash
 http://localhost:3004/docs
 ```
+
+---
 
 ### Como usar a API
 
@@ -47,11 +51,15 @@ Iniciar a API
 nodemon index.js
 ```
 
+---
+
 ### FrameWorks Usados
 - express
 - nodemon
 - winston
 - swagger-ui-express
+
+---
 
 ### Funcionamento do Bando de Dados
 Usamos o arquivo car-list.json como banco<br>
