@@ -1,6 +1,6 @@
 # Dealership-api
 
-## Dealership API 
+## Dealership API possuí endpoints get que retorna algumas informações de uma lista de marcas e modelos
 
 ### Funcionalidades:
 
