@@ -20,9 +20,8 @@ POST - passar o parâmetro no formato json: { "marca": "Fiat" }<br>
 ---
 
 ### Documentação swagger da API
-```bash
-http://localhost:3004/docs
-```
+
+(http://localhost:3004/docs)
 
 ---
 
