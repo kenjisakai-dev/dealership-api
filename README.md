@@ -2,7 +2,7 @@
 
 ## Dealership API possuí endpoints get que retornam algumas informações de uma lista de marcas e modelos
 
-### Funcionalidades:
+### Funcionalidades
 
 Retornar a marca que possuí mais ou menos modelos<br>
 GET (http://localhost:3004/marcas/maisModelos)<br>
