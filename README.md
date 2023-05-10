@@ -1,21 +1,66 @@
-# dealership-api
+# Dealership-api
 
-## CRUD dealership-api (concessionária) obtém informações de uma lista em json de marcas e modelos de carros 
+## Dealership API possuí endpoints get que retornam algumas informações de uma lista de marcas e modelos
 
-### Funcionalidades:
+### Funcionalidades
 
-- Retorna a marca que mais possui modelos<br>
-- Retorna a marca que menos possui modelos<br>
-- Retorna as marcas que mais possui modelos de acordo com a quantidade passada<br> 
-- Retorna as marcas que menos possui modelos de acordo com a quantidade passada<br>
-- Retorna uma lista de modelos de acordo com a marca procurada<br>
+Retornar a marca que possuí mais ou menos modelos<br>
+GET (http://localhost:3004/marcas/maisModelos)<br>
+GET (http://localhost:3004/marcas/menosModelos)
 
-Mais informações na pasta docs
+Retornar as marcas que possuí mais ou menos modelos<br>
+GET (http://localhost:3004/marcas/listaMaisModelos/{qnt})<br>
+GET (http://localhost:3004/marcas/listaMenosModelos/{qnt})
 
-### Ajuda:
 
-- kenjisakai80@gmail.com
+Retornar uma lista com todos os modelos de uma marca<br>
+POST (http://localhost:3004/marcas/listaModelos)
+```json
+{
+  "marca": "Fiat"
+}
+```
 
-### Autores:
+---
 
-- Kenji Sakai
+### Documentação swagger da API
+
+(http://localhost:3004/docs)
+
+---
+
+### Como usar a API
+
+Instale as Dependências
+```bash
+npm install
+```
+
+Iniciar a API
+```bash
+nodemon index.js
+```
+
+---
+
+### FrameWorks Usados
+- express
+- nodemon
+- winston
+- swagger-ui-express
+
+---
+
+### Funcionamento do Bando de Dados
+Formato do arquivo car-list.json
+```json
+[
+  {
+    "brand": "Hummer",
+    "models": [
+      "H2",
+      "H3"
+    ]
+  }
+]
+```
