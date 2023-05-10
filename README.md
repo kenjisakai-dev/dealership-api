@@ -14,8 +14,12 @@ GET (http://localhost:3004/marcas/listaMenosModelos/{qnt})
 
 
 Retornar uma lista com todos os modelos de uma marca<br>
-POST - passar o parâmetro no formato json: { "marca": "Fiat" }<br>
-(http://localhost:3004/marcas/listaModelos)
+POST (http://localhost:3004/marcas/listaModelos)
+```json
+{
+  "marca": "Fiat"
+}
+```
 
 ---
 
@@ -48,6 +52,14 @@ nodemon index.js
 ---
 
 ### Funcionamento do Bando de Dados
-Usamos o arquivo car-list.json como banco<br>
-- Um array de objetos com as seguintes propriedades brand (marca) e models (modelos)
-- a propriedade models possuí um array dos modelos
+Formato do arquivo car-list.json
+```json
+[
+  {
+    brand: "Fiat",
+    models: [
+      "1100", "126", "500", "500L", "500X", "850", "Barchetta", "Brava", "Cinquecento", "Coupé", "Croma", "Doblo", "Doblo Cargo", "Doblo Cargo Combi", "Ducato",         "Ducato Van", "Ducato Kombi", "Ducato Podvozok", "Florino", "Florino Combi", "Freemont", "Grande Punto", "Idea", "Linea", "Marea", "Marea Weekend",  "Multipla", "Palio Weekend", "Panda", "Panda Van", "Punto", "Punto Cabriolet", "Punto Evo", "Punto Van", "Qubo", "Scudo", "Scudo Van", "Scudo Kombi", "Sedici",   "Seicento", "Stilo", "Stilo Multiwagon", "Strada", "Talento", "Tipo", "Ulysse", "Uno", "X1/9"
+    ]
+  }
+]
+```
