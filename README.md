@@ -43,7 +43,7 @@ nodemon index.js
 
 Pronto, agora podemos usar os endpoints
 
-Também podemos usar a API com o graphQL
+Também podemos usar a API com o graphQL<br>
 http://localhost:3004/graphql
 
 ---
