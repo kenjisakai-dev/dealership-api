@@ -41,6 +41,10 @@ Iniciar a API
 nodemon index.js
 ```
 
+Pronto, agora podemos usar os endpoints
+
+Podemos usar a API com o graphQL
+
 ---
 
 ### FrameWorks Usados
@@ -48,6 +52,8 @@ nodemon index.js
 - nodemon
 - winston
 - swagger-ui-express
+- graphQL
+- express-graphQL
 
 ---
 
@@ -60,7 +66,7 @@ Formato do arquivo car-list.json
     "models": [
       "H2",
       "H3"
-    ]
-  }
+    ],
+  },
 ]
 ```
