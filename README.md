@@ -8,7 +8,7 @@ Retornar a marca que possuí mais ou menos modelos<br>
 GET (http://localhost:3004/marcas/maisModelos)<br>
 GET (http://localhost:3004/marcas/menosModelos)
 
-Retornar as marcas que possuí mais ou menos modelos<br>
+Retornar as marcas que possuem mais ou menos modelos<br>
 GET (http://localhost:3004/marcas/listaMaisModelos/{qnt})<br>
 GET (http://localhost:3004/marcas/listaMenosModelos/{qnt})
 
