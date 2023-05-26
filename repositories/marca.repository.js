@@ -3,7 +3,6 @@ const { readFile } = fs;
 
 async function maisModelos() {
   const data = JSON.parse(await readFile('car-list.json'));
-  let array = [];
 
   data
     .sort((a, b) => {
@@ -11,20 +10,20 @@ async function maisModelos() {
     })
     .sort((a, b) => {
       return b.models.length - a.models.length;
-    })
-    .map((car) => {
-      if (car.models.length == data[0].models.length) {
-        array.push(car.brand);
-      }
     });
 
-  return array.length === 1 ? array[0] : array;
+  const brands = [];
+  const moreModels = data[0].models.length;
+
+  data.forEach((e) => {
+    if (e.models.length === moreModels) brands.push(e.brand);
+  });
+
+  return brands.length === 1 ? brands[0] : brands;
 }
 
 async function menosModelos() {
   const data = JSON.parse(await readFile('car-list.json'));
-
-  let array = [];
 
   data
     .sort((a, b) => {
@@ -32,14 +31,16 @@ async function menosModelos() {
     })
     .sort((a, b) => {
       return a.models.length - b.models.length;
-    })
-    .map((car) => {
-      if (car.models.length == data[0].models.length) {
-        array.push(car.brand);
-      }
     });
 
-  return array.length === 1 ? array[0] : array;
+  const brands = [];
+  const moreModels = data[0].models.length;
+
+  data.forEach((e) => {
+    if (e.models.length === moreModels) brands.push(e.brand);
+  });
+
+  return brands.length === 1 ? brands[0] : brands;
 }
 
 async function listaMaisModelos(qnt) {
@@ -53,8 +54,8 @@ async function listaMaisModelos(qnt) {
       return b.models.length - a.models.length;
     })
     .slice(0, qnt)
-    .map((car) => {
-      return `${car.brand} - ${car.models.length}`;
+    .map((e) => {
+      return `${e.brand} - ${e.models.length}`;
     });
   return brands;
 }
@@ -70,8 +71,8 @@ async function listaMenosModelos(qnt) {
       return a.models.length - b.models.length;
     })
     .slice(0, qnt)
-    .map((car) => {
-      return `${car.brand} - ${car.models.length}`;
+    .map((e) => {
+      return `${e.brand} - ${e.models.length}`;
     });
   return brands;
 }
@@ -79,9 +80,11 @@ async function listaMenosModelos(qnt) {
 async function listaModelos(marca) {
   const data = JSON.parse(await readFile('car-list.json'));
 
-  const index = data.findIndex(
-    (car) => car.brand.toLowerCase() === marca.toLowerCase()
-  );
+  if (typeof marca !== 'string') marca = marca.nomeMarca;
+
+  const index = data.findIndex((e) => {
+    return e.brand?.toLowerCase() === marca.toLowerCase();
+  });
 
   return index === -1 ? [] : data[index].models;
 }

@@ -54,14 +54,14 @@ async function listaMenosModelos(req, res, next) {
 
 async function listaModelos(req, res, next) {
   try {
-    const marca = req.body.marca;
+    const marca = req.body.nomeMarca;
     if (!marca) throw new Error('A Marca é obrigatória.');
 
     const models = await MarcaService.listaModelos(marca);
 
     res.send(models);
     global.logger.info(
-      `POST /marcas/listaModelos - ${req.body.marca}: ${JSON.stringify(models)}`
+      `POST /marcas/listaModelos - ${marca}: ${JSON.stringify(models)}`
     );
   } catch (err) {
     next(err);

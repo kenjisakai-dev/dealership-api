@@ -1,5 +1,5 @@
 export const swaggerDocument = {
-  openapi: '3.0.0',
+  swagger: '2.0',
   info: {
     title: 'Dealership API',
     description: 'Read Dealership API',
@@ -35,7 +35,7 @@ export const swaggerDocument = {
         tags: ['Marcas'],
         summary: 'Obter a marca com menos modelos',
         description:
-          'Essa rota será responsável por obter a marca com mais modelos',
+          'Essa rota será responsável por obter a marca com menos modelos',
         produces: ['application/json'],
         responses: {
           200: {
@@ -57,15 +57,15 @@ export const swaggerDocument = {
     '/marcas/listaMaisModelos/{qnt}': {
       get: {
         tags: ['Marcas'],
-        summary: 'Obter as marcas com mais modelos',
+        summary: 'Obter uma qunatidade das marcas com mais modelos',
         description:
-          'Essa rota será responsável por obter as marcas com mais modelos',
+          'Essa rota será responsável por obter uma quantidade das marcas com mais modelos',
         produces: ['application/json'],
         parameters: [
           {
             name: 'qnt',
             in: 'path',
-            description: 'Quantidade',
+            description: 'Retornar uma quantidade de marcas com mais modelos',
             required: true,
           },
         ],
@@ -95,15 +95,15 @@ export const swaggerDocument = {
     '/marcas/listaMenosModelos/{qnt}': {
       get: {
         tags: ['Marcas'],
-        summary: 'Obter as marcas com menos modelos',
+        summary: 'Obter uma qunatidade das marcas com menos modelos',
         description:
-          'Essa rota será responsável por obter as marcas com menos modelos',
+          'Essa rota será responsável por obter uma quantidade das marcas com menos modelos',
         produces: ['application/json'],
         parameters: [
           {
             name: 'qnt',
             in: 'path',
-            description: 'Quantidade',
+            description: 'Retornar uma quantidade de marcas com menos modelos',
             required: true,
           },
         ],
@@ -142,7 +142,7 @@ export const swaggerDocument = {
             'application/json': {
               schema: {
                 properties: {
-                  marca: {
+                  nomeMarca: {
                     type: 'string',
                     example: 'fiat',
                   },
@@ -214,6 +214,21 @@ export const swaggerDocument = {
           400: {
             description: 'Error occurred',
           },
+        },
+      },
+    },
+  },
+  definitions: {
+    CarList: {
+      type: 'object',
+      properties: {
+        brand: {
+          type: 'string',
+          example: 'Hummer',
+        },
+        models: {
+          type: 'string',
+          example: ['H2', 'H3'],
         },
       },
     },
