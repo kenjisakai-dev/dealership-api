@@ -1,6 +1,6 @@
 # Dealership-api
 
-## Dealership API possuí endpoints get que retornam algumas informações de uma lista de marcas e modelos
+## Dealership API possuí endpoints que retornam algumas informações de uma lista de marcas e modelos de carros
 
 ### Funcionalidades
 
@@ -17,15 +17,36 @@ Retornar uma lista com todos os modelos de uma marca<br>
 POST (http://localhost:3004/marcas/listaModelos)
 ```json
 {
-  "marca": "Fiat"
+  "nomeMarca": "Fiat"
 }
 ```
 
----
+### Também podemos usar o GraphQL (http://localhost:3004/graphql)
 
-### Documentação swagger da API
+Retornar a marca que possuí mais ou menos modelos<br>
+```bash
+{
+  maisModelos
+  menosModelos
+}
+```
 
-(http://localhost:3004/docs)
+Retornar a marca que possuí mais ou menos modelos<br>
+```bash
+{
+  listaMaisModelos(qnt: 5)
+  listaMenosModelos(qnt: 5)
+}
+```
+
+Retornar as marcas que possuem mais ou menos modelos<br>
+```bash
+mutation {
+  listaModelos(marca: {
+    nomeMarca: "fiat"
+  })
+}
+```
 
 ---
 
@@ -38,13 +59,16 @@ npm install
 
 Iniciar a API
 ```bash
-nodemon index.js
+npm run dev
 ```
 
-Pronto, agora podemos usar os endpoints
+Pronto, agora podemos usar a API
 
-Também podemos usar a API com o graphQL<br>
-http://localhost:3004/graphql
+---
+
+### Documentação swagger da API
+
+(http://localhost:3004/swagger)
 
 ---
 
@@ -62,12 +86,7 @@ http://localhost:3004/graphql
 Formato do arquivo car-list.json
 ```json
 [
-  {
-    "brand": "Hummer",
-    "models": [
-      "H2",
-      "H3"
-    ],
-  },
+  {"brand": "Hummer", "models": ["H2", "H3"]},
+  {"brand": "Rover", "models": ["200", "214", "218", "25", "400", "414", "416", "620", "75"]},
 ]
 ```
