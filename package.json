@@ -4,7 +4,6 @@
     "description": "crud dealership-api",
     "main": "index.js",
     "scripts": {
-        "test": "jest",
         "start": "nodemon server.js"
     },
     "author": "Kenji Sakai",
