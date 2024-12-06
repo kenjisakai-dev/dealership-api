@@ -59,7 +59,7 @@ O banco de dados é representado como um array de objetos JSON. Cada objeto cont
 
 3. Podemos consultar os endpoints de 3 formas diferentes
 
-    1. Consultar via requisições HTTP padrão `http://localhost:3003/<endpoint>`
+    1. Consultar via requisição HTTP padrão `http://localhost:3003/<endpoint>`
 
     2. Consultar via GraphQL acessando `http://localhost:3003/graphQL`
 
@@ -383,7 +383,7 @@ O banco de dados é representado como um array de objetos JSON. Cada objeto cont
 <details>
   <summary>maisModelos - Consulta responsável por obter a marca de carro com mais modelos</summary>
 
-#### **Consulta**
+#### **Consulta GraphQL**
 
 ```
 {
@@ -395,9 +395,9 @@ O banco de dados é representado como um array de objetos JSON. Cada objeto cont
 }
 ```
 
-#### **Resposta**
+#### **Resposta da Consulta**
 
-```
+```json
 {
   "data": {
     "maisModelos": {
@@ -473,7 +473,7 @@ O banco de dados é representado como um array de objetos JSON. Cada objeto cont
 <details>
   <summary>menosModelos - Consulta responsável por obter a marca de carro com menos modelos</summary>
 
-#### **Consulta**
+#### **Consulta GraphQL**
 
 ```
 {
@@ -485,9 +485,9 @@ O banco de dados é representado como um array de objetos JSON. Cada objeto cont
 }
 ```
 
-#### **Resposta**
+#### **Resposta da Consulta**
 
-```
+```json
 {
   "data": {
     "menosModelos": {
@@ -507,7 +507,7 @@ O banco de dados é representado como um array de objetos JSON. Cada objeto cont
 <details>
   <summary>listaMaisModelos - Consulta responsável por obter uma lista de marcas de carro com mais modelos</summary>
 
-#### **Consulta**
+#### **Consulta GraphQL**
 
 ```
 {
@@ -519,9 +519,9 @@ O banco de dados é representado como um array de objetos JSON. Cada objeto cont
 }
 ```
 
-#### **Resposta**
+#### **Resposta da Consulta**
 
-```
+```json
 {
   "data": {
     "listaMaisModelos": [
@@ -653,7 +653,7 @@ O banco de dados é representado como um array de objetos JSON. Cada objeto cont
 <details>
   <summary>listaMenosModelos - Consulta responsável por obter uma lista de marcas de carro com menos modelos</summary>
 
-#### **Consulta**
+#### **Consulta GraphQL**
 
 ```
 {
@@ -665,9 +665,9 @@ O banco de dados é representado como um array de objetos JSON. Cada objeto cont
 }
 ```
 
-#### **Resposta**
+#### **Resposta da Consulta**
 
-```
+```json
 {
   "data": {
     "listaMenosModelos": [
@@ -701,9 +701,8 @@ O banco de dados é representado como um array de objetos JSON. Cada objeto cont
 
 <details>
   <summary>obterModelo - Consulta responsável por obter uma marca de carro específica</summary>
-
-#### **Consulta**
-
+    
+#### **Consulta GraphQL**
 ```
 {
   obterModelo(marca: "Hummer") {
@@ -714,9 +713,9 @@ O banco de dados é representado como um array de objetos JSON. Cada objeto cont
 }
 ```
 
-#### **Resposta**
+#### **Resposta da Consulta**
 
-```
+```json
 {
   "data": {
     "obterModelo": {
