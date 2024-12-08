@@ -79,7 +79,7 @@ O banco de dados é representado como um array de objetos JSON. Cada objeto cont
 | 200        | Ok          | Informação obtida com sucesso       |
 | 400        | Bad Request | Houve um erro ao obter a informação |
 
-#### **Resposta 200 do endoint**
+#### **Resposta 200 do endpoint**
 
 ```json
 {
@@ -160,7 +160,7 @@ O banco de dados é representado como um array de objetos JSON. Cada objeto cont
 | 200        | Ok          | Informação obtida com sucesso       |
 | 400        | Bad Request | Houve um erro ao obter a informação |
 
-#### **Resposta 200 do endoint**
+#### **Resposta 200 do endpoint**
 
 ```json
 {
@@ -188,7 +188,7 @@ O banco de dados é representado como um array de objetos JSON. Cada objeto cont
 | 200        | Ok          | Informação obtida com sucesso       |
 | 400        | Bad Request | Houve um erro ao obter a informação |
 
-#### **Resposta 200 do endoint**
+#### **Resposta 200 do endpoint**
 
 ```json
 [
@@ -331,7 +331,7 @@ O banco de dados é representado como um array de objetos JSON. Cada objeto cont
 | 200        | Ok          | Informação obtida com sucesso       |
 | 400        | Bad Request | Houve um erro ao obter a informação |
 
-#### **Resposta 200 do endoint**
+#### **Resposta 200 do endpoint**
 
 ```json
 [
@@ -366,7 +366,7 @@ O banco de dados é representado como um array de objetos JSON. Cada objeto cont
 | 200        | Ok          | Informação obtida com sucesso       |
 | 400        | Bad Request | Houve um erro ao obter a informação |
 
-#### **Resposta 200 do endoint**
+#### **Resposta 200 do endpoint**
 
 ```json
 {
